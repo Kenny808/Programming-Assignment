@@ -19,9 +19,9 @@ struct StudySpotCard: View {
                 .font(.title2)
                 .fontWeight(.semibold)
 
-            Text("Noise: \(spot.noise)")
+            Text("Noise 🔊: \(spot.noise)")
 
-            Text("Outlets: \(spot.outlets)")
+            Text("Outlets 🔌: \(spot.outlets)")
         }
         .frame(
             maxWidth: .infinity,

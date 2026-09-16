@@ -76,12 +76,12 @@ struct LoginView: View {
     func createAccount() {
 
         guard !email.isEmpty else {
-            message = "Please enter an email."
+            message = "Please enter an email. 📝"
             return
         }
 
         guard !password.isEmpty else {
-            message = "Please enter a password."
+            message = "Please enter a password. 🔐"
             return
         }
 
@@ -93,12 +93,12 @@ struct LoginView: View {
             if let error = error {
 
                 message = error.localizedDescription
-                print("CREATE ACCOUNT ERROR:", error)
+                print("CREATE ACCOUNT ERROR: ❌", error)
 
             } else {
 
                 message = ""
-                print("Account created successfully!")
+                print("Account created successfully! ✅")
             }
         }
     }
@@ -106,12 +106,12 @@ struct LoginView: View {
     func login() {
 
         guard !email.isEmpty else {
-            message = "Please enter an email."
+            message = "Please enter an email. 📝"
             return
         }
 
         guard !password.isEmpty else {
-            message = "Please enter a password."
+            message = "Please enter a password. 🔐"
             return
         }
 
@@ -123,12 +123,12 @@ struct LoginView: View {
             if let error = error {
 
                 message = error.localizedDescription
-                print("LOGIN ERROR:", error)
+                print("LOGIN ERROR: ❌", error)
 
             } else {
 
                 message = ""
-                print("Login successful!")
+                print("Login successful! ✅")
             }
         }
     }

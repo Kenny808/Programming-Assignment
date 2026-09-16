@@ -23,7 +23,7 @@ struct ContentView: View {
 
             VStack(alignment: .leading, spacing: 16) {
 
-                Text("Study Spot Finder")
+                Text("Study Spot Finder 📕")
                     .font(.largeTitle)
                     .fontWeight(.bold)
 
@@ -35,7 +35,7 @@ struct ContentView: View {
 
                 if spots.isEmpty {
 
-                    Text("No study spots yet.")
+                    Text("No study spots yet 😞")
                         .foregroundStyle(.secondary)
 
                 } else {
